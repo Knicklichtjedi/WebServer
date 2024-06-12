@@ -24,6 +24,7 @@ def df_to_json(df: pd.DataFrame) -> dict:
     :return: Serializable dict
     """
 
-    df_json = df.to_dict()
+    # added orient "list" to force columns a and b to be of type list
+    df_json = df.to_dict(orient="list")
 
     return df_json
