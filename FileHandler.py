@@ -9,7 +9,7 @@ def get_df(rows: int = 1000) -> pd.DataFrame:
     :param rows: How many rows to generate
     :return: Dataframe with columns a, b
     """
-    dataframe = pd.DataFrame(np.random.randint(0, 100, rows), columns=['a'])
+    dataframe = pd.DataFrame(np.random.randint(0, 100, rows), columns=['a'], dtype=int)
 
     # new column with values mapped to mod10 as column b
     dataframe['b'] = dataframe.map(lambda x: x % 10)
@@ -17,5 +17,13 @@ def get_df(rows: int = 1000) -> pd.DataFrame:
     return dataframe
 
 
-if __name__ == '__main__':
-    get_df()
+def df_to_json(df: pd.DataFrame) -> dict:
+    """
+    Convert a pandas DataFrame to a JSON representation that is serializable.
+    :param df: pandas dataframe
+    :return: Serializable dict
+    """
+
+    df_json = df.to_dict()
+
+    return df_json

@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.23.1",
-    "vue": "^3.4.21"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue-next": "^0.21.2",
+    "vue": "^3.4.27"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "unplugin-vue-components": "^0.27.0",
     "vite": "^5.2.0"
   }
 }
