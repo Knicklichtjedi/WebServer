@@ -70,9 +70,9 @@ onMounted(() => {
 
   <title>This is the demo for JCB</title>
 
-  <div id="plot"></div>
-
   <BCard>
+    <div id="plot"></div>
+
     <BCardText>
       Displaying the loaded data, which was requested from the Web Server.
     </BCardText>
