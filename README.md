@@ -1,7 +1,7 @@
 # WebServer
 Webserver functionalities with Flask and pandas.
 
-![Example of the web application. It displays a scatter plot where points are organized in the shape of a slightly angled parallelogram.](./web_app.png "Example of the web application.")
+![Example of the web application. It displays a scatter plot where points are organized in the shape of a slightly angled parallelogram.](web_app.png "Example of the web application.")
 
 ## Building
 
