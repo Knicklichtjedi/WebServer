@@ -15,3 +15,15 @@ Webserver functionalities with Flask and pandas.
 ## Starting
 1. Start `WebServer.py`
 
+## Technologies
+### Frontend
+- Vite 5.0.5
+- Vue 3.4.27
+- Bootstrap 5.3.3
+- Bootstrap-vue-next 0.21.2
+- plotly.js 2.33.0
+
+### Backend
+- flask 3.0.3
+- pandas 2.2.2
+- numpy 1.26.4
