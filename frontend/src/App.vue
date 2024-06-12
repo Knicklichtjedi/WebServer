@@ -76,7 +76,7 @@ onMounted(() => {
     <BCardText>
       Displaying the loaded data, which was requested from the Web Server.
     </BCardText>
-    <BButton variant="outline-primary" @click="getGraph">Load Data</BButton>
+    <BButton variant="outline-primary" @click="getGraph">Load Chart</BButton>
   </BCard>
 
 </template>
