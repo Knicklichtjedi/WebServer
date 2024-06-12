@@ -1,6 +1,8 @@
 # WebServer
 Webserver functionalities with Flask and pandas.
 
+![Example of the web application. It displays a scatter plot where points are organized in the shape of a slightly angled parallelogram.](./web_app.png "Example of the web application.")
+
 ## Building
 
 1. Install python 3.12
@@ -9,4 +11,7 @@ Webserver functionalities with Flask and pandas.
 3. CD to `/frontend`
 4. Run `npm install`
 5. Run `npm run build`
-6. Start `WebServer.py`
+
+## Starting
+1. Start `WebServer.py`
+

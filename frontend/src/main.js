@@ -9,5 +9,6 @@ import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 import './style.css'
 
 const app = createApp(App)
+// Activate bootstrap rendering of components
 app.use(createBootstrap({components: true, directives: true}))
 app.mount('#app')
