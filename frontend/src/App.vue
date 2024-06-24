@@ -17,9 +17,10 @@ async function getData() {
     response = await fetch(`${baseURL}/data`);
   } catch (e) {
     console.log(e);
+    return null
   }
 
-  if (response !== null) {
+  if (response !== null && response.status === 200) {
     try {
       dataResponse = await response.json();
     } catch (e) {
@@ -27,6 +28,7 @@ async function getData() {
     }
   } else {
     console.log("Response failed, cannot decode to JSON!")
+    return null;
   }
 
   return dataResponse;
@@ -56,7 +58,11 @@ async function getGraph() {
    * @type {null}
    */
   const graphData = await getData();
-  const plotElement = await drawGraph(graphData);
+  if (graphData !== null) {
+    const plotElement = await drawGraph(graphData);
+  }else{
+    console.log("Data element has content.")
+  }
 }
 
 // Display empty plot to avoid page movement

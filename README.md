@@ -10,6 +10,7 @@ Webserver functionalities with Flask and pandas.
 2. Install npm
 3. CD to `/frontend`
 4. Run `npm install`
+5. Create `.env` file in `/frontend` folder and add `VITE_API_BASE_URL=http://127.0.0.1:5000`or with a different url if your server has a different address
 5. Run `npm run build`
 
 ## Starting
